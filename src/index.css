@@ -1,13 +1,93 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#header {
+  height: 80px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-color: brown;
+  box-shadow: 5px 5px 5px black;
+}
+#form_container {
+  height: auto;
+  width: 30%;
+  margin: auto;
+  margin-top: 100px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px black;
+  text-align: center;
+}
+input {
+  border: none;
+  width: 90%;
+  height: 20px;
+}
+.text {
+  height: 50px;
+  margin-top: 15px;
+}
+#submit {
+  height: 30px;
+  width: 10%;
+  background-color: brown;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 60px 0px 0px -220px;
+  position: absolute;
+  border-radius: 7px;
+}
+#submit:hover {
+  background-color: white;
+  border: 3px solid brown;
+  cursor: pointer;
+  color: brown;
+}
+.show_note_container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 20px;
+  padding: 5px;
+  height: auto;
+  width: 90%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+}
+.show_note {
+  height: 100px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 7px 7px 5px black;
+  margin-top: 50px;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.headings {
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fa-trash:hover {
+  font-size: 20px;
+  cursor: pointer;
 }
